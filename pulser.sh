@@ -64,6 +64,13 @@ function main() {
 
     # warn about lack of internet bro.
 
+    # info about http_proxy,https_proxy,no_proxy env settings
+    # ie. This host is in the no_proxy list
+    # because of proxy settings we should really be careful and use the hostname provided to us 
+
+    # info about nameserver who is responding to nslookup and/or /etc/resolv.conf
+    # figure out how this relates to using NetworkManager, as that's another storry to get true ns ip
+
     local resolved_ip="$(resolve-host $service_host)"
     # eventually be smart and warn about using /etc/hosts
 
